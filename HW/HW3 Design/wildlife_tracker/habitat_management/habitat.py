@@ -1,4 +1,6 @@
 from typing import Any, List, Optional
+from wildlife_tracker.animal_management.animal import Animal
+from wildlife_tracker.habitat_management.habitat import Habitat
 
 class Habitat:
 
@@ -30,3 +32,16 @@ def get_animals_in_habitat(self) -> List[Animal]:
 
 def get_habitat_details(self) -> dict:
     pass
+
+def get_habitats_by_geographic_area(self, geographic_area: str) -> List[Habitat]:
+    pass
+
+def get_habitats_by_size(self, size: int) -> List[Habitat]:
+    pass
+
+def get_habitats_by_type(self, environment_type: str) -> List[Habitat]:
+    pass
+
+
+
+
