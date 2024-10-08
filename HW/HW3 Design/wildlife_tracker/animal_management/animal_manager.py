@@ -6,12 +6,20 @@ class AnimalManager:
 
     def __init__(self) -> None:
         animals: dict[int, Animal] = {}
+        aCounter = 0
 
     def get_animal_by_id(self, animal_id: int) -> Optional[Animal]:
-        pass
+        if animal_id in self.animals:
+            return self.animals[animal_id]
+        return None
+       
 
     def register_animal(self, Animal) -> None:
-        pass
+        self.animals[self.aCounter] = Animal
+        self.aCounter += 1
+        
 
     def remove_animal(self, animal_id: int) -> None:
-        pass
+        if animal_id in self.animals:
+            del self.animals[animal_id]
+    
